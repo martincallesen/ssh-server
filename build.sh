@@ -1,2 +1,1 @@
-
-docker build -t ssh-server .
+docker build -t martincallesen/ssh-server .

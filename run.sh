@@ -1,1 +1,1 @@
-docker run -p 22:22 ssh-server
+docker run --name ssh-server -d -p 23:22 martincallesen/ssh-server
