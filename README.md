@@ -1,6 +1,6 @@
 # SSH-dockerfile
 
-This Dockerfile creates an ssh service inside a docker container
+This Dockerfile creates an ssh service on ubuntu inside a docker container
 
 
 ![Docker](https://github.com/s1ntaxe770r/SSH-dockerfile/workflows/Docker/badge.svg)
