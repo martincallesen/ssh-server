@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-ARG USER="test"
-ARG PASSWORD="test"
+ARG USER="ubuntu"
+ARG PASSWORD="Test1234"
 
 RUN apt update
 
