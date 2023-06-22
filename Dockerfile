@@ -5,7 +5,13 @@ ARG PASSWORD="Test1234"
 
 RUN apt update
 
-RUN apt install openssh-server sudo -y
+RUN apt install \
+    openssh-server \
+    sudo -y
+
+#Enable root user
+RUN  echo 'root:password' | chpasswd
+RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 $USER 
 

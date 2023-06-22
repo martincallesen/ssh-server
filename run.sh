@@ -1,1 +1,1 @@
-docker run --name ssh-server -d -p 23:22 martincallesen/ssh-server
+docker run --name ssh-server --network development-network -d -p 22:22 martincallesen/ssh-server
